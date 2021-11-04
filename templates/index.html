@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text Utils</title>
+</head>
+<body>
+    <h1>Welcome to TextUtils</h1>
+    <form action="/analyse" method="post"> {% csrf_token %}
+        <textarea name="text" id="text" cols="200" rows="10" placeholder="Enter your text here"></textarea>
+        <br>
+        <input type="checkbox" name="removePunc"> Remove Punctations</input> <br>
+        <input type="checkbox" name="uppercaseEach"> CAPITALIZATION</input> <br>
+        <input type="checkbox" name="lowercaseEach"> lower case each letter</input> <br>
+        <input type="checkbox" name="newLineRemover"> Remove Every New Line</input> <br>
+        <input type="checkbox" name="ExtraSpaceRemover"> Remove Every Extra Space</input> <br>
+        <input type="checkbox" name="charCounter"> count Total char in the text</input> <br>
+        <button type="submit" name="submit">Submit</button>
+    </form>
+</body>
+</html>
